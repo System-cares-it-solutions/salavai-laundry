@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://thesalavailaundry.com/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thesalavailaundry.com/images/salavai%20trans.png</image:loc>
+      <image:title>The Salavai Laundry - Best Traditional Laundry in Chennai</image:title>
+      <image:caption>The Salavai Laundry - Professional and Traditional Garment Care Service in Chennai</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Our Stores & Booking Page -->
+  <url>
+    <loc>https://thesalavailaundry.com/our-stores.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://thesalavailaundry.com/images/salavai%20trans.png</image:loc>
+      <image:title>The Salavai Laundry Stores Chennai - Neelankarai ECR</image:title>
+    </image:image>
+  </url>
+
+  <!-- Pricing & Full Garment Catalog -->
+  <url>
+    <loc>https://thesalavailaundry.com/pricing.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Our Story / Heritage & Traditional Care -->
+  <url>
+    <loc>https://thesalavailaundry.com/our-story.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://thesalavailaundry.com/about.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Business Partner Program (BPP) -->
+  <url>
+    <loc>https://thesalavailaundry.com/business-partner.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Self Income Generation Program (SIGP) -->
+  <url>
+    <loc>https://thesalavailaundry.com/sigp.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
