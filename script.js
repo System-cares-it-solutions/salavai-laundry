@@ -324,7 +324,7 @@
   // 8. EMAILJS CONTACT FORMS INTEGRATION
   // =============================================
   const EMAILJS_PUBLIC_KEY = '6Gc6hDas_DeBPKDLt';
-  const EMAILJS_SERVICE_ID = 'service_cs1absd';
+  const EMAILJS_SERVICE_ID = 'service_61ps94a';
   const EMAILJS_TEMPLATE_ID = 'template_7jvwjyx';
 
   function initEmailJSForms() {
@@ -349,7 +349,7 @@
         return;
       }
 
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
         .then(() => {
           showToast(successMsg || 'Thank you! Your message has been sent successfully.', 'success');
           formElement.reset();
@@ -430,7 +430,7 @@
         const submitBtn = sigpForm.querySelector('button[type="submit"]');
         const name = (document.getElementById('sigpFullName')?.value || '').trim();
         const phone = (document.getElementById('sigpPhone')?.value || '').trim();
-        const email = (document.getElementById('sigpEmail')?.value || '').trim() || 'Not provided';
+        const email = (document.getElementById('sigpEmail')?.value || '').trim();
         const location = (document.getElementById('sigpLocation')?.value || '').trim();
         const categorySelect = document.getElementById('sigpCategory');
         const category = categorySelect?.options[categorySelect.selectedIndex]?.text || categorySelect?.value || 'SIGP Applicant';
@@ -441,11 +441,25 @@
           return;
         }
 
+        if (!isValidMobile(phone)) {
+          showToast('Please enter a valid 10-digit mobile number (e.g. 9876543210).', 'error');
+          const phoneInput = document.getElementById('sigpPhone');
+          if (phoneInput) phoneInput.focus();
+          return;
+        }
+
+        if (email && !isValidEmail(email)) {
+          showToast('Please enter a valid email address (e.g. name@example.com).', 'error');
+          const emailInput = document.getElementById('sigpEmail');
+          if (emailInput) emailInput.focus();
+          return;
+        }
+
         const templateParams = {
           form_source: 'SIGP Program Application',
           from_name: name,
           from_phone: phone,
-          from_email: email,
+          from_email: email || 'Not provided',
           location: location,
           service_type: `SIGP - ${category}`,
           message: message || 'No extra mentorship details provided.'
@@ -471,6 +485,20 @@
 
         if (!name || !phone || !email || !location || !enquirySelect?.value) {
           showToast('Please fill in all required fields (*).', 'error');
+          return;
+        }
+
+        if (!isValidMobile(phone)) {
+          showToast('Please enter a valid 10-digit mobile number (e.g. 9876543210).', 'error');
+          const phoneInput = document.getElementById('bppPhone');
+          if (phoneInput) phoneInput.focus();
+          return;
+        }
+
+        if (!isValidEmail(email)) {
+          showToast('Please enter a valid email address (e.g. name@example.com).', 'error');
+          const emailInput = document.getElementById('bppEmail');
+          if (emailInput) emailInput.focus();
           return;
         }
 
