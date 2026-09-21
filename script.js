@@ -792,6 +792,21 @@
 
     if (!table) return;
 
+    // Automatically format all prices to 2 decimal places (e.g. ₹ 75 -> ₹ 75.00)
+    const priceCells = table.querySelectorAll('.garment-final-price');
+    priceCells.forEach(cell => {
+      let html = cell.innerHTML;
+      html = html.replace(/₹\s*([\d,]+(\.\d+)?)/g, (match, p1) => {
+        const numStr = p1.replace(/,/g, '');
+        const num = parseFloat(numStr);
+        if (!isNaN(num)) {
+          return '₹ ' + num.toFixed(2);
+        }
+        return match;
+      });
+      cell.innerHTML = html;
+    });
+
     const tbody = table.querySelector('tbody');
     const rows = tbody.querySelectorAll('tr:not(.category-header-row):not(.no-match-row)');
     const headerRows = tbody.querySelectorAll('tr.category-header-row');
@@ -858,10 +873,33 @@
       });
     });
 
+    const searchBtn = document.getElementById('garmentSearchBtn');
+
+    function performSearch() {
+      if (!searchInput) return;
+      currentSearch = searchInput.value.trim().toLowerCase();
+      if (currentSearch) {
+        currentFilter = 'all';
+        tabs.forEach(t => t.classList.remove('active'));
+      }
+      filterTable();
+    }
+
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value.trim().toLowerCase();
         filterTable();
+      });
+      searchInput.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+    }
+
+    if (searchBtn) {
+      searchBtn.addEventListener('click', () => {
+        performSearch();
       });
     }
 
