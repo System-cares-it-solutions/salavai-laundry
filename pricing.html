@@ -2,6 +2,15 @@
 <html lang="ta">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTKHGRJQQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JTKHGRJQQP');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing &amp; Rates | The Salavai Laundry - Best Traditional Laundry in Chennai (சலவை)</title>
@@ -93,7 +102,8 @@
         <a href="about.html" class="nav-link">About Us</a>
         <a href="business-partner.html" class="nav-link">Business Partner Program</a>
         <a href="sigp.html" class="nav-link">Self Income Generation Program</a>
-        <a href="our-stores.html#contact" class="nav-link nav-btn-pickup" data-service="Pickup & Delivery">Schedule Pick up</a>
+        <a href="our-stores.html#contact" class="nav-link nav-btn-pickup" data-service="Pickup & Delivery">Schedule Pick
+          up</a>
       </nav>
 
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -113,15 +123,18 @@
         </h1>
 
         <p class="stores-hero-subtitle">
-          Explore our complete, itemized laundry and wet cleaning price chart with 109+ garment categories. Affordable fabric care tailored for every household with no hidden charges.
+          Explore our complete, itemized laundry and wet cleaning price chart with 109+ garment categories. Affordable
+          fabric care tailored for every household with no hidden charges.
         </p>
 
         <!-- CTA ROW -->
         <div class="stores-hero-actions-row" style="justify-content: center; gap: 15px; margin-top: 25px;">
-          <a href="#garment-pricing" class="stores-hero-price-btn" style="padding: 13px 30px; font-size: 15px; font-weight: 700; border-radius: 50px;">
+          <a href="#garment-pricing" class="stores-hero-price-btn"
+            style="padding: 13px 30px; font-size: 15px; font-weight: 700; border-radius: 50px;">
             Explore Garment Rates
           </a>
-          <a href="our-stores.html#contact" class="hero-blue-btn" style="padding: 13px 30px; font-size: 15px; font-weight: 700; border-radius: 50px; background-color: #155293; color: #ffffff !important; box-shadow: 0 6px 20px rgba(21, 82, 147, 0.45);">
+          <a href="our-stores.html#contact" class="hero-blue-btn"
+            style="padding: 13px 30px; font-size: 15px; font-weight: 700; border-radius: 50px; background-color: #155293; color: #ffffff !important; box-shadow: 0 6px 20px rgba(21, 82, 147, 0.45);">
             Schedule Pick up
           </a>
         </div>
@@ -129,786 +142,679 @@
       </div>
     </section>
 
-    <!-- SECTION: SALAVAI LAUNDRY GARMENT LIST WITH PRICING -->
+    <!-- SECTION: SALAVAI LAUNDRY GARMENT CARE & LAUNDRY PRICE LIST -->
     <section class="garment-pricing-section" id="garment-pricing">
-      <div class="container" style="max-width: 1140px;">
-        
-        <!-- SECTION TITLE & SUBTITLE -->
+      <div class="container garment-pricing-container">
+
+        <!-- SECTION TITLE & BADGE -->
         <div class="garment-pricing-header" data-aos="fade-up">
-          <h1 class="garment-main-title">
-            THE SALAVAI LAUNDRY <span class="highlight-red">GARMENT LIST WITH PRICING</span>
-          </h1>
+          <h2 class="garment-main-title">
+            THE SALAVAI LAUNDRY <span class="highlight-red">GARMENT CARE &amp; LAUNDRY PRICE LIST</span>
+          </h2>
           <p class="garment-main-subtitle">
-            Search by Pincode or Area name to find your active Salavai Laundry store, schedule doorstep pickup, or chat directly with our store team.
+            All prices are in Indian Rupees (&#8377;) and exclusive of GST. Explore transparent itemized rates for
+            Regular Wash, Wet Cleaning, and Steam Ironing with free doorstep pickup across Chennai.
           </p>
         </div>
 
+
         <!-- MAIN PRICING WIDGET CARD -->
         <div class="garment-pricing-card" data-aos="fade-up" id="garmentCollapsibleBody">
-          
-          <!-- TOP DARK NAVY HEADER BAR -->
-          <div class="garment-widget-header">
-            <div class="garment-cat-header">
-              CATEGORIES
-            </div>
-            <div class="garment-search-header">
-              <div class="garment-search-pill">
-                <input type="text" id="garmentSearchInput" placeholder="Search garments..." aria-label="Search garments" />
-                <button type="button" class="garment-search-btn" id="garmentSearchBtn">Search</button>
-              </div>
+
+          <!-- TOP CONTROL BAR: CATEGORY TABS -->
+          <div class="garment-widget-nav">
+            <div class="garment-category-tabs" role="tablist">
+              <button type="button" class="garment-tab-btn" data-filter="kg" role="tab" aria-selected="false">
+                <span class="cat-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                  </svg>
+                </span>
+                <span class="tab-label">KG Laundry</span>
+                <span class="tab-badge">1</span>
+              </button>
+              <button type="button" class="garment-tab-btn active" data-filter="mens" role="tab" aria-selected="true">
+                <span class="cat-icon">&#9794;</span>
+                <span class="tab-label">Men&rsquo;s Wear</span>
+                <span class="tab-badge">16</span>
+              </button>
+              <button type="button" class="garment-tab-btn" data-filter="womens" role="tab" aria-selected="false">
+                <span class="cat-icon">&#9792;</span>
+                <span class="tab-label">Women&rsquo;s Wear</span>
+                <span class="tab-badge">19</span>
+              </button>
+              <button type="button" class="garment-tab-btn" data-filter="kids" role="tab" aria-selected="false">
+                <span class="cat-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M8 15s1.5 2 4 2 4-2 4-2"></path>
+                    <circle cx="9" cy="9" r="1.5" fill="currentColor"></circle>
+                    <circle cx="15" cy="9" r="1.5" fill="currentColor"></circle>
+                  </svg>
+                </span>
+                <span class="tab-label">Kids&rsquo; Wear</span>
+                <span class="tab-badge">3</span>
+              </button>
+              <button type="button" class="garment-tab-btn" data-filter="household" role="tab" aria-selected="false">
+                <span class="cat-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </span>
+                <span class="tab-label">Household Items</span>
+                <span class="tab-badge">19</span>
+              </button>
             </div>
           </div>
 
-          <!-- SPLIT BODY LAYOUT -->
-          <div class="garment-widget-body">
-            
-            <!-- LEFT SIDEBAR -->
-            <div class="garment-sidebar">
-              <button type="button" class="garment-tab-btn active" data-filter="mens">
-                <span>Men's</span>
-                <span class="cat-icon" style="font-size: 18px; font-weight: bold;">♂</span>
-              </button>
-              <button type="button" class="garment-tab-btn" data-filter="womens">
-                <span>Women's</span>
-                <span class="cat-icon" style="font-size: 18px; font-weight: bold;">♀</span>
-              </button>
-              <button type="button" class="garment-tab-btn" data-filter="kids">
-                <span>Kid's</span>
-                <span class="cat-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 15s1.5 2 4 2 4-2 4-2"></path><circle cx="9" cy="9" r="1.5" fill="currentColor"></circle><circle cx="15" cy="9" r="1.5" fill="currentColor"></circle></svg>
-                </span>
-              </button>
-              <button type="button" class="garment-tab-btn" data-filter="household">
-                <span>Households</span>
-                <span class="cat-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                </span>
-              </button>
-              <button type="button" class="garment-tab-btn" data-filter="kg">
-                <span>KG Laundry</span>
-                <span class="cat-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" /><line x1="7" y1="7" x2="7.01" y2="7" /></svg>
-                </span>
-              </button>
-              <button type="button" class="garment-tab-btn" data-filter="ironing">
-                <span>Only Ironing</span>
-                <span class="cat-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2z"></path><line x1="2" y1="14" x2="22" y2="14"></line></svg>
-                </span>
-              </button>
+          <!-- ACTIVE CATEGORY & GST NOTICE TOPBAR -->
+          <div class="garment-panel-topbar">
+            <div class="garment-active-category" id="garmentActiveCategoryText">
+              <span class="cat-indicator-dot"></span>
+              <strong>Men&rsquo;s Wear</strong> (16 items)
             </div>
+            <div class="garment-gst-notice">
+              <span class="gst-notice-pill"><strong class="gst-star">*</strong> Prices exclusive of GST</span>
+              <span class="notice-sep">&bull;</span>
+              <span class="dash-legend">&ldquo;&mdash;&rdquo; indicates not listed</span>
+            </div>
+          </div>
 
-            <!-- RIGHT CONTENT PANEL -->
-            <div class="garment-content-panel">
-              
-              <!-- GST Disclaimer Note -->
-              <div class="garment-gst-notice">
-                <span><strong style="color: #c62222;">*</strong> Prices are exclusive of GST</span>
-              </div>
 
-              <!-- Garment Pricing Table -->
-              <div class="garment-table-wrapper">
-                <table class="garment-table" id="garmentPricingTable">
-                  <thead>
-                    <tr>
-                      <th style="width: 70px; text-align: center;">S.No</th>
-                      <th>Garments</th>
-                      <th style="width: 170px; text-align: right;">Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                <!-- ================= MENS ================= -->
-                <tr class="category-header-row" data-category="mens">
-                  <td colspan="3">
-                    <span style="display: inline-flex; align-items: center; gap: 8px;">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                      MENS GARMENTS
-                    </span>
-                  </td>
-                </tr>
-                <tr data-category="mens" data-name="shirt regular">
-                  <td class="garment-sno">1</td>
-                  <td class="garment-name">Shirt (Regular) <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 99.00</td>
-                </tr>
-                <tr data-category="mens" data-name="silk shirt">
-                  <td class="garment-sno">2</td>
-                  <td class="garment-name">Silk Shirt <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 157.00</td>
-                </tr>
-                <tr data-category="mens" data-name="undershirt">
-                  <td class="garment-sno">3</td>
-                  <td class="garment-name">Undershirt <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 40.00</td>
-                </tr>
-                <tr data-category="mens" data-name="t-shirt tshirt">
-                  <td class="garment-sno">4</td>
-                  <td class="garment-name">T-Shirt / Heavy <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 119.20</td>
-                </tr>
-                <tr data-category="mens" data-name="sweat shirt sweatshirt">
-                  <td class="garment-sno">5</td>
-                  <td class="garment-name">Sweat Shirt <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 157.00</td>
-                </tr>
-                <tr data-category="mens" data-name="hoodies hoodie">
-                  <td class="garment-sno">6</td>
-                  <td class="garment-name">Hoodies <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 385.00</td>
-                </tr>
-                <tr data-category="mens" data-name="top wear">
-                  <td class="garment-sno">7</td>
-                  <td class="garment-name">Top Wear <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 420.00</td>
-                </tr>
-                <tr data-category="mens" data-name="pants pant regular">
-                  <td class="garment-sno">8</td>
-                  <td class="garment-name">Pants (Regular) <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 99.00</td>
-                </tr>
-                <tr data-category="mens" data-name="pyjama pajama">
-                  <td class="garment-sno">9</td>
-                  <td class="garment-name">Pyjama <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 90.00</td>
-                </tr>
-                <tr data-category="mens" data-name="sweat pants sweatpants">
-                  <td class="garment-sno">10</td>
-                  <td class="garment-name">Sweat Pants <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 120.00</td>
-                </tr>
-                <tr data-category="mens" data-name="track pant trackpant">
-                  <td class="garment-sno">11</td>
-                  <td class="garment-name">Track Pant <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 157.00</td>
-                </tr>
-                <tr data-category="mens" data-name="capri">
-                  <td class="garment-sno">12</td>
-                  <td class="garment-name">Capri <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 70.00</td>
-                </tr>
-                <tr data-category="mens" data-name="bottom wear">
-                  <td class="garment-sno">13</td>
-                  <td class="garment-name">Bottom Wear <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 444.50</td>
-                </tr>
-                <tr data-category="mens" data-name="blazer">
-                  <td class="garment-sno">14</td>
-                  <td class="garment-name">Blazer <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 525.00</td>
-                </tr>
-                <tr data-category="mens" data-name="long blazer">
-                  <td class="garment-sno">15</td>
-                  <td class="garment-name">Long Blazer <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 650.00</td>
-                </tr>
-                <tr data-category="mens" data-name="waist coat waistcoat">
-                  <td class="garment-sno">16</td>
-                  <td class="garment-name">Waist Coat <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 325.00</td>
-                </tr>
-                <tr data-category="mens" data-name="coat">
-                  <td class="garment-sno">17</td>
-                  <td class="garment-name">Coat <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 525.00</td>
-                </tr>
-                <tr data-category="mens" data-name="jacket half">
-                  <td class="garment-sno">18</td>
-                  <td class="garment-name">Jacket Half <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 444.50</td>
-                </tr>
-                <tr data-category="mens" data-name="jacket">
-                  <td class="garment-sno">19</td>
-                  <td class="garment-name">Jacket <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 665.00</td>
-                </tr>
-                <tr data-category="mens" data-name="overcoat">
-                  <td class="garment-sno">20</td>
-                  <td class="garment-name">Overcoat <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 650.00</td>
-                </tr>
-                <tr data-category="mens" data-name="leather jacket">
-                  <td class="garment-sno">21</td>
-                  <td class="garment-name">Leather Jacket <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 770.00</td>
-                </tr>
-                <tr data-category="mens" data-name="longcoat long coat">
-                  <td class="garment-sno">22</td>
-                  <td class="garment-name">Longcoat <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 650.00</td>
-                </tr>
-                <tr data-category="mens" data-name="sports jacket">
-                  <td class="garment-sno">23</td>
-                  <td class="garment-name">Sports Jacket <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 444.50</td>
-                </tr>
-                <tr data-category="mens" data-name="winter jacket">
-                  <td class="garment-sno">24</td>
-                  <td class="garment-name">Winter Jacket <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 560.00</td>
-                </tr>
-                <tr data-category="mens" data-name="pullover">
-                  <td class="garment-sno">25</td>
-                  <td class="garment-name">Pullover <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 315.00</td>
-                </tr>
-                <tr data-category="mens" data-name="sweater half">
-                  <td class="garment-sno">26</td>
-                  <td class="garment-name">Sweater Half <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 210.00</td>
-                </tr>
-                <tr data-category="mens" data-name="kurta">
-                  <td class="garment-sno">27</td>
-                  <td class="garment-name">Kurta <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 175.00</td>
-                </tr>
-                <tr data-category="mens" data-name="achkan">
-                  <td class="garment-sno">28</td>
-                  <td class="garment-name">Achkan <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 525.00</td>
-                </tr>
-                <tr data-category="mens" data-name="sherwani">
-                  <td class="garment-sno">29</td>
-                  <td class="garment-name">Sherwani <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 595.00</td>
-                </tr>
-                <tr data-category="mens" data-name="dhoti kurta">
-                  <td class="garment-sno">30</td>
-                  <td class="garment-name">Dhoti Kurta <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 245.00</td>
-                </tr>
-                <tr data-category="mens" data-name="kurta pyajama pajama">
-                  <td class="garment-sno">31</td>
-                  <td class="garment-name">Kurta Pyajama <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 315.00</td>
-                </tr>
-                <tr data-category="mens" data-name="pathani suit">
-                  <td class="garment-sno">32</td>
-                  <td class="garment-name">Pathani Suit <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 245.00</td>
-                </tr>
-                <tr data-category="mens" data-name="cotton dhothi dhoti">
-                  <td class="garment-sno">33</td>
-                  <td class="garment-name">Cotton Dhothi <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 99.00</td>
-                </tr>
-                <tr data-category="mens" data-name="silk dhothi dhoti">
-                  <td class="garment-sno">34</td>
-                  <td class="garment-name">Silk Dhothi <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 155.00</td>
-                </tr>
-                <tr data-category="mens" data-name="mundi dhoti">
-                  <td class="garment-sno">35</td>
-                  <td class="garment-name">Mundi Dhoti <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 120.00</td>
-                </tr>
-                <tr data-category="mens" data-name="suit 2 pcs 2pcs">
-                  <td class="garment-sno">36</td>
-                  <td class="garment-name">Suit 2 Pcs <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 665.00</td>
-                </tr>
-                <tr data-category="mens" data-name="suit 3 pcs 3pcs">
-                  <td class="garment-sno">37</td>
-                  <td class="garment-name">Suit 3 Pcs <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 875.00</td>
-                </tr>
-                <tr data-category="mens" data-name="tuxedo">
-                  <td class="garment-sno">38</td>
-                  <td class="garment-name">Tuxedo <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 840.00</td>
-                </tr>
-                <tr data-category="mens" data-name="track suit tracksuit">
-                  <td class="garment-sno">39</td>
-                  <td class="garment-name">Track Suit <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 315.00</td>
-                </tr>
-                <tr data-category="mens" data-name="safari suit">
-                  <td class="garment-sno">40</td>
-                  <td class="garment-name">Safari Suit <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 343.00</td>
-                </tr>
-                <tr data-category="mens" data-name="bike rider full suit">
-                  <td class="garment-sno">41</td>
-                  <td class="garment-name">Bike Rider Full Suit <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 1,575.00</td>
-                </tr>
-                <tr data-category="mens" data-name="bike rider suit 2 pcs">
-                  <td class="garment-sno">42</td>
-                  <td class="garment-name">Bike Rider Suit 2 Pcs <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 1,750.00</td>
-                </tr>
-                <tr data-category="mens" data-name="shorts">
-                  <td class="garment-sno">43</td>
-                  <td class="garment-name">Shorts <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 62.00</td>
-                </tr>
-                <tr data-category="mens" data-name="bath robe bathrobe">
-                  <td class="garment-sno">44</td>
-                  <td class="garment-name">Bath Robe <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 157.00</td>
-                </tr>
-                <tr data-category="mens" data-name="towel">
-                  <td class="garment-sno">45</td>
-                  <td class="garment-name">Towel <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 45.00</td>
-                </tr>
-                <tr data-category="mens" data-name="tie">
-                  <td class="garment-sno">46</td>
-                  <td class="garment-name">Tie <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 55.00</td>
-                </tr>
-                <tr data-category="mens" data-name="swimming costume swimwear">
-                  <td class="garment-sno">47</td>
-                  <td class="garment-name">Swimming Costume <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 105.00</td>
-                </tr>
-                <tr data-category="mens" data-name="laundry garment">
-                  <td class="garment-sno">48</td>
-                  <td class="garment-name">Laundry Garment <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 89.00</td>
-                </tr>
-                <tr data-category="mens" data-name="shoe wash shoes">
-                  <td class="garment-sno">49</td>
-                  <td class="garment-name">Shoe Wash <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="mens" data-name="sneakers shoes">
-                  <td class="garment-sno">50</td>
-                  <td class="garment-name">Sneakers <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 84.00</td>
-                </tr>
-                <tr data-category="mens" data-name="formal shoes">
-                  <td class="garment-sno">51</td>
-                  <td class="garment-name">Formal Shoes <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="mens" data-name="socks">
-                  <td class="garment-sno">52</td>
-                  <td class="garment-name">Socks <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
-                </tr>
-                <tr data-category="mens" data-name="vest innerwear">
-                  <td class="garment-sno">53</td>
-                  <td class="garment-name">Vest <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
-                </tr>
-                <tr data-category="mens" data-name="briefs innerwear">
-                  <td class="garment-sno">54</td>
-                  <td class="garment-name">Briefs <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
-                </tr>
-                <tr data-category="mens" data-name="boxer innerwear">
-                  <td class="garment-sno">55</td>
-                  <td class="garment-name">Boxer <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 40.00</td>
-                </tr>
-                <tr data-category="mens" data-name="helmet">
-                  <td class="garment-sno">56</td>
-                  <td class="garment-name">Helmet <span class="garment-cat-pill">Mens</span></td>
-                  <td class="garment-final-price">₹ 100.00</td>
-                </tr>
-
-                <!-- ================= WOMENS ================= -->
-                <tr class="category-header-row" data-category="womens">
-                  <td colspan="3">
-                    <span style="display: inline-flex; align-items: center; gap: 8px;">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 10c-3.33 0-8 1.67-8 5v3h16v-3c0-3.33-4.67-5-8-5z"></path></svg>
-                      WOMENS GARMENTS
-                    </span>
-                  </td>
-                </tr>
-                <tr data-category="womens" data-name="salwar kameez regular">
-                  <td class="garment-sno">57</td>
-                  <td class="garment-name">Salwar Kameez (Regular) <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="womens" data-name="kurti regular">
-                  <td class="garment-sno">58</td>
-                  <td class="garment-name">Kurti (Regular) <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 99.00</td>
-                </tr>
-                <tr data-category="womens" data-name="anarkali suit">
-                  <td class="garment-sno">59</td>
-                  <td class="garment-name">Anarkali Suit <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 450.00</td>
-                </tr>
-                <tr data-category="womens" data-name="lehenga">
-                  <td class="garment-sno">60</td>
-                  <td class="garment-name">Lehenga <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 525.00</td>
-                </tr>
-                <tr data-category="womens" data-name="gown">
-                  <td class="garment-sno">61</td>
-                  <td class="garment-name">Gown <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 350.00</td>
-                </tr>
-                <tr data-category="womens" data-name="saree womens saree regular">
-                  <td class="garment-sno">62</td>
-                  <td class="garment-name">Saree (Regular) <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 150.00</td>
-                </tr>
-                <tr data-category="womens" data-name="blouse">
-                  <td class="garment-sno">63</td>
-                  <td class="garment-name">Blouse <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 105.00</td>
-                </tr>
-                <tr data-category="womens" data-name="dupatta">
-                  <td class="garment-sno">64</td>
-                  <td class="garment-name">Dupatta <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 84.00</td>
-                </tr>
-                <tr data-category="womens" data-name="petticoat">
-                  <td class="garment-sno">65</td>
-                  <td class="garment-name">Petticoat <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 70.00</td>
-                </tr>
-                <tr data-category="womens" data-name="palazzo pants">
-                  <td class="garment-sno">66</td>
-                  <td class="garment-name">Palazzo Pants <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="womens" data-name="churidar">
-                  <td class="garment-sno">67</td>
-                  <td class="garment-name">Churidar <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies suit">
-                  <td class="garment-sno">68</td>
-                  <td class="garment-name">Ladies Suit <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 420.00</td>
-                </tr>
-                <tr data-category="womens" data-name="nighty nightwear">
-                  <td class="garment-sno">69</td>
-                  <td class="garment-name">Nighty <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 126.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies jacket">
-                  <td class="garment-sno">70</td>
-                  <td class="garment-name">Ladies Jacket <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 440.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies top">
-                  <td class="garment-sno">71</td>
-                  <td class="garment-name">Ladies Top <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 126.00</td>
-                </tr>
-                <tr data-category="womens" data-name="skirt">
-                  <td class="garment-sno">72</td>
-                  <td class="garment-name">Skirt <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="womens" data-name="cardigan">
-                  <td class="garment-sno">73</td>
-                  <td class="garment-name">Cardigan <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 210.00</td>
-                </tr>
-                <tr data-category="womens" data-name="frock">
-                  <td class="garment-sno">74</td>
-                  <td class="garment-name">Frock <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 175.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies blazer">
-                  <td class="garment-sno">75</td>
-                  <td class="garment-name">Ladies Blazer <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 440.00</td>
-                </tr>
-                <tr data-category="womens" data-name="sharara">
-                  <td class="garment-sno">76</td>
-                  <td class="garment-name">Sharara <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 280.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies shoes">
-                  <td class="garment-sno">77</td>
-                  <td class="garment-name">Ladies Shoes <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="womens" data-name="heels">
-                  <td class="garment-sno">78</td>
-                  <td class="garment-name">Heels <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies sandals">
-                  <td class="garment-sno">79</td>
-                  <td class="garment-name">Ladies Sandals <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 100.00</td>
-                </tr>
-                <tr data-category="womens" data-name="bra innerwear">
-                  <td class="garment-sno">80</td>
-                  <td class="garment-name">Bra <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
-                </tr>
-                <tr data-category="womens" data-name="panty innerwear">
-                  <td class="garment-sno">81</td>
-                  <td class="garment-name">Panty <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
-                </tr>
-                <tr data-category="womens" data-name="lingerie set innerwear">
-                  <td class="garment-sno">82</td>
-                  <td class="garment-name">Lingerie Set <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 150.00</td>
-                </tr>
-                <tr data-category="womens" data-name="ladies innerwear">
-                  <td class="garment-sno">83</td>
-                  <td class="garment-name">Ladies Innerwear <span class="garment-cat-pill">Womens</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
-                </tr>
-
-                <!-- ================= KIDS ================= -->
-                <tr class="category-header-row" data-category="kids">
-                  <td colspan="3">
-                    <span style="display: inline-flex; align-items: center; gap: 8px;">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
-                      KIDS GARMENTS
-                    </span>
-                  </td>
-                </tr>
-                <tr data-category="kids" data-name="kids shirt">
-                  <td class="garment-sno">84</td>
-                  <td class="garment-name">Kids Shirt <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 70.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids pant">
-                  <td class="garment-sno">85</td>
-                  <td class="garment-name">Kids Pant <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 70.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids t-shirt tshirt">
-                  <td class="garment-sno">86</td>
-                  <td class="garment-name">Kids T-Shirt <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 56.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids dress">
-                  <td class="garment-sno">87</td>
-                  <td class="garment-name">Kids Dress <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 105.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids frock">
-                  <td class="garment-sno">88</td>
-                  <td class="garment-name">Kids Frock <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 105.00</td>
-                </tr>
-                <tr data-category="kids" data-name="school uniform">
-                  <td class="garment-sno">89</td>
-                  <td class="garment-name">School Uniform <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids jacket">
-                  <td class="garment-sno">90</td>
-                  <td class="garment-name">Kids Jacket <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids track suit tracksuit">
-                  <td class="garment-sno">91</td>
-                  <td class="garment-name">Kids Track Suit <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="kids" data-name="baby wear">
-                  <td class="garment-sno">92</td>
-                  <td class="garment-name">Baby Wear <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 56.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids shorts">
-                  <td class="garment-sno">93</td>
-                  <td class="garment-name">Kids Shorts <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 56.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids kurta">
-                  <td class="garment-sno">94</td>
-                  <td class="garment-name">Kids Kurta <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 105.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids blazer">
-                  <td class="garment-sno">95</td>
-                  <td class="garment-name">Kids Blazer <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 175.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids sweater">
-                  <td class="garment-sno">96</td>
-                  <td class="garment-name">Kids Sweater <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 105.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids frock suit">
-                  <td class="garment-sno">97</td>
-                  <td class="garment-name">Kids Frock Suit <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids lehenga">
-                  <td class="garment-sno">98</td>
-                  <td class="garment-name">Kids Lehenga <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 175.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids shoes">
-                  <td class="garment-sno">99</td>
-                  <td class="garment-name">Kids Shoes <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 100.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids socks">
-                  <td class="garment-sno">100</td>
-                  <td class="garment-name">Kids Socks <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 20.00</td>
-                </tr>
-                <tr data-category="kids" data-name="kids innerwear">
-                  <td class="garment-sno">101</td>
-                  <td class="garment-name">Kids Innerwear <span class="garment-cat-pill">Kids</span></td>
-                  <td class="garment-final-price">₹ 20.00</td>
-                </tr>
-
-                <!-- ================= HOUSEHOLD ================= -->
-                <tr class="category-header-row" data-category="household">
-                  <td colspan="3">
-                    <span style="display: inline-flex; align-items: center; gap: 8px;">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                      HOUSEHOLD ITEMS
-                    </span>
-                  </td>
-                </tr>
-                <tr data-category="household" data-name="quilt blanket">
-                  <td class="garment-sno">102</td>
-                  <td class="garment-name">Quilt <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 400.00</td>
-                </tr>
-                <tr data-category="household" data-name="double bedsheet bedsheet bed spread">
-                  <td class="garment-sno">103</td>
-                  <td class="garment-name">Double Bedsheet <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 225.00</td>
-                </tr>
-                <tr data-category="household" data-name="household curtains curtain per sq">
-                  <td class="garment-sno">104</td>
-                  <td class="garment-name">Household Curtains <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 40.00 <span style="font-size: 12px; color: #64748b; font-weight: normal;">/ Sq Ft</span></td>
-                </tr>
-                <tr data-category="household" data-name="carpet rug per sq">
-                  <td class="garment-sno">105</td>
-                  <td class="garment-name">Carpet <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 35.00 <span style="font-size: 12px; color: #64748b; font-weight: normal;">/ Sq Ft</span></td>
-                </tr>
-                <tr data-category="household" data-name="pillow">
-                  <td class="garment-sno">106</td>
-                  <td class="garment-name">Pillow <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 200.00</td>
-                </tr>
-                <tr data-category="household" data-name="pillow cover">
-                  <td class="garment-sno">107</td>
-                  <td class="garment-name">Pillow Cover <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 40.00</td>
-                </tr>
-                <tr data-category="household" data-name="sofa cover">
-                  <td class="garment-sno">108</td>
-                  <td class="garment-name">Sofa Cover <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 140.00</td>
-                </tr>
-                <tr data-category="household" data-name="table cloth">
-                  <td class="garment-sno">109</td>
-                  <td class="garment-name">Table Cloth <span class="garment-cat-pill">Household</span></td>
-                  <td class="garment-final-price">₹ 120.00</td>
-                </tr>
-
-                <!-- ================= KG LAUNDRY ================= -->
+          <!-- TABLE WRAPPER -->
+          <div class="garment-table-wrapper">
+            <table class="garment-table" id="garmentPricingTable">
+              <thead>
+                <tr>
+                  <th class="th-sno">#</th>
+                  <th class="th-garment">Garment / Description</th>
+                  <th class="th-wash">
+                    <div class="th-pill-header wash-pill">
+                      Regular Wash
+                    </div>
+                  </th>
+                  <th class="th-wet">
+                    <div class="th-pill-header wet-pill">
+                      Wet Cleaning
+                    </div>
+                  </th>
+                  <th class="th-iron">
+                    <div class="th-pill-header iron-pill">
+                      Ironing Only
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- ================= 0. KG LAUNDRY ================= -->
                 <tr class="category-header-row" data-category="kg">
-                  <td colspan="3">
-                    <span style="display: inline-flex; align-items: center; gap: 8px;">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" /><line x1="7" y1="7" x2="7.01" y2="7" /></svg>
-                      KG LAUNDRY
+                  <td colspan="5">
+                    <span class="cat-header-title">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display:inline; vertical-align:middle; margin-right:4px;">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                      </svg> KG LAUNDRY (BULK EVERYDAY CARE &bull; MIN 5 KG)
                     </span>
                   </td>
                 </tr>
-                <tr data-category="kg" data-name="kg laundry wash dry fold">
-                  <td class="garment-sno">110</td>
-                  <td class="garment-name">Kg Laundry - wash, dry &amp; fold <span class="garment-cat-pill">KG
-                      Care</span></td>
-                  <td class="garment-final-price">₹ 125.00 <span
-                      style="font-size: 12px; color: #64748b; font-weight: normal;">/ Kg</span></td>
-                </tr>
-                <tr data-category="kg" data-name="kg laundry wash dry iron">
-                  <td class="garment-sno">111</td>
-                  <td class="garment-name">Kg Laundry - wash, dry &amp; iron <span class="garment-cat-pill">KG
-                      Care</span></td>
-                  <td class="garment-final-price">₹ 225.00 <span
-                      style="font-size: 12px; color: #64748b; font-weight: normal;">/ Kg</span></td>
+                <tr data-category="kg"
+                  data-name="wash and fold kg laundry bulk everyday clothes bedsheets towels wash fold without spotting 1 kg 125 min 5kg">
+                  <td class="garment-sno">1</td>
+                  <td class="garment-name">Wash &amp; Fold <span class="garment-subtext">(Without Spotting &bull; Min 5
+                      KG)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 125 / kg</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
                 </tr>
 
-                <!-- ================= ONLY IRONING ================= -->
-                <tr class="category-header-row" data-category="ironing">
-                  <td colspan="3">
-                    <span style="display: inline-flex; align-items: center; gap: 8px;">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2z"></path><line x1="2" y1="14" x2="22" y2="14"></line><line x1="6" y1="10" x2="6.01" y2="10"></line></svg>
-                      ONLY IRONING
+                <!-- ================= 1. MEN'S WEAR ================= -->
+                <tr class="category-header-row" data-category="mens">
+                  <td colspan="5">
+                    <span class="cat-header-title">
+                      <span style="font-size: 16px;">&#9794;</span> 1. MEN'S WEAR
                     </span>
                   </td>
                 </tr>
-                <tr data-category="ironing" data-name="shirt iron ironing">
-                  <td class="garment-sno">112</td>
-                  <td class="garment-name">Shirt <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
+                <tr data-category="mens" data-name="shirt regular mens formal casual spotting wash iron">
+                  <td class="garment-sno">1</td>
+                  <td class="garment-name">Shirt <span class="garment-subtext">(Spotting/Wash/Iron)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 99</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 30</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="pant pants iron ironing">
-                  <td class="garment-sno">113</td>
-                  <td class="garment-name">Pant <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 30.00</td>
+                <tr data-category="mens" data-name="silk shirt mens pattu">
+                  <td class="garment-sno">2</td>
+                  <td class="garment-name">Silk Shirt</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 150</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 30</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="individual top top iron ironing">
-                  <td class="garment-sno">114</td>
-                  <td class="garment-name">Individual Top <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 50.00</td>
+                <tr data-category="mens" data-name="t-shirt tshirt tee mens">
+                  <td class="garment-sno">3</td>
+                  <td class="garment-name">T-Shirt</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 99</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 30</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="silk saree saree iron ironing">
-                  <td class="garment-sno">115</td>
-                  <td class="garment-name">Silk Saree <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 125.00</td>
+                <tr data-category="mens" data-name="cotton dhoti dhotis dhothi veshti mens">
+                  <td class="garment-sno">4</td>
+                  <td class="garment-name">Cotton Dhoti</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 150</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 30</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="cotton saree saree iron ironing">
-                  <td class="garment-sno">116</td>
-                  <td class="garment-name">Cotton Saree <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 75.00</td>
+                <tr data-category="mens" data-name="silk dhoti dhotis dhothi pattu veshti mens">
+                  <td class="garment-sno">5</td>
+                  <td class="garment-name">Silk Dhoti</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 150</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 40</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="suit 2pc 2 pc suit 2 piece suit iron ironing">
-                  <td class="garment-sno">117</td>
-                  <td class="garment-name">Suit 2 Pc <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 150.00</td>
+                <tr data-category="mens" data-name="coat jacket blazer mens">
+                  <td class="garment-sno">6</td>
+                  <td class="garment-name">Coat / Jacket / Blazer</td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 450</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 150</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="blazer coat iron ironing">
-                  <td class="garment-sno">118</td>
-                  <td class="garment-name">Blazer <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 100.00</td>
+                <tr data-category="mens" data-name="2-piece suit 2 piece suit coat pant mens">
+                  <td class="garment-sno">7</td>
+                  <td class="garment-name">2-Piece Suit</td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 550</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 250</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="3pc suit 3 pc suit 3 piece suit iron ironing">
-                  <td class="garment-sno">119</td>
-                  <td class="garment-name">3 Pc Suit <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 175.00</td>
+                <tr data-category="mens" data-name="3-piece suit 3 piece suit tuxedo mens">
+                  <td class="garment-sno">8</td>
+                  <td class="garment-name">3-Piece Suit</td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 625</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 275</span></td>
                 </tr>
-                <tr data-category="ironing" data-name="lehenga lehnga iron ironing">
-                  <td class="garment-sno">120</td>
-                  <td class="garment-name">Lehenga <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 250.00</td>
+                <tr data-category="mens" data-name="tie necktie bow mens">
+                  <td class="garment-sno">9</td>
+                  <td class="garment-name">Tie</td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 75</span></td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
                 </tr>
-                <tr data-category="ironing" data-name="Waist coat Waist coat iron ironing">
-                  <td class="garment-sno">121</td>
-                  <td class="garment-name">Waist coat / with hanger <span class="garment-cat-pill">Ironing</span></td>
-                  <td class="garment-final-price">₹ 75.00</td>
+                <tr data-category="mens" data-name="pyjama suit pajama suit kurta pyjama mens">
+                  <td class="garment-sno">10</td>
+                  <td class="garment-name">Pyjama Suit</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 275</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 100</span></td>
+                </tr>
+                <tr data-category="mens" data-name="kurta mens ethnic traditional">
+                  <td class="garment-sno">11</td>
+                  <td class="garment-name">Kurta</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 99</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 60</span></td>
+                </tr>
+                <tr data-category="mens" data-name="sweater pullover winter woolen mens">
+                  <td class="garment-sno">12</td>
+                  <td class="garment-name">Sweater</td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 200</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 60</span></td>
+                </tr>
+                <tr data-category="mens" data-name="undergarments undershirt pants banyan underwear briefs mens">
+                  <td class="garment-sno">13</td>
+                  <td class="garment-name">Undergarments / Undershirt / Pants</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 40</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="mens" data-name="socks per pair mens stockings">
+                  <td class="garment-sno">14</td>
+                  <td class="garment-name">Socks <span class="garment-subtext">(per pair)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 30</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="mens" data-name="shorts half pants bermuda mens">
+                  <td class="garment-sno">15</td>
+                  <td class="garment-name">Shorts / Half Pants</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 60</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="mens" data-name="shoes footwear sneakers cleaning wash mens">
+                  <td class="garment-sno">16</td>
+                  <td class="garment-name">Shoes <span class="garment-subtext">(Pair)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 200</span></td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
                 </tr>
 
+                <!-- ================= 2. WOMEN'S WEAR ================= -->
+                <tr class="category-header-row" data-category="womens">
+                  <td colspan="5">
+                    <span class="cat-header-title">
+                      <span style="font-size: 16px;">&#9792;</span> 2. WOMEN'S WEAR
+                    </span>
+                  </td>
+                </tr>
+                <tr data-category="womens" data-name="top tops womens">
+                  <td class="garment-sno">1</td>
+                  <td class="garment-name">Top</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 99</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 40</span></td>
+                </tr>
+                <tr data-category="womens" data-name="pants slacks trousers womens">
+                  <td class="garment-sno">2</td>
+                  <td class="garment-name">Pants / Slacks</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 99</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 30</span></td>
+                </tr>
+                <tr data-category="womens" data-name="silk saree sarees pattu saree polishing roll press womens">
+                  <td class="garment-sno">3</td>
+                  <td class="garment-name">Silk Saree</td>
+                  <td class="garment-price garment-wash"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 350</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 125</span></td>
+                </tr>
+                <tr data-category="womens" data-name="cotton saree sarees womens">
+                  <td class="garment-sno">4</td>
+                  <td class="garment-name">Cotton Saree</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 75</span></td>
+                </tr>
+                <tr data-category="womens" data-name="churidar set chudidhar womens">
+                  <td class="garment-sno">5</td>
+                  <td class="garment-name">Churidar Set</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 60</span></td>
+                </tr>
+                <tr data-category="womens" data-name="salwar kameez salwar kameez suits womens">
+                  <td class="garment-sno">6</td>
+                  <td class="garment-name">Salwar Kameez (Set)</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 75</span></td>
+                </tr>
+                <tr data-category="womens" data-name="lehenga lehnga bridal ethnic ghagra womens">
+                  <td class="garment-sno">7</td>
+                  <td class="garment-name">Lehenga</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 550</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 750</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 250</span></td>
+                </tr>
+                <tr data-category="womens" data-name="kurti set kurta set womens">
+                  <td class="garment-sno">8</td>
+                  <td class="garment-name">Kurti Set</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 75</span></td>
+                </tr>
+                <tr data-category="womens" data-name="skirt skirts long skirt womens">
+                  <td class="garment-sno">9</td>
+                  <td class="garment-name">Skirt</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 75</span></td>
+                </tr>
+                <tr data-category="womens" data-name="frock frocks one piece dress womens">
+                  <td class="garment-sno">10</td>
+                  <td class="garment-name">Frock</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 160</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 220</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 75</span></td>
+                </tr>
+                <tr data-category="womens" data-name="nighty night wear nightgown womens">
+                  <td class="garment-sno">11</td>
+                  <td class="garment-name">Nighty</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 80</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 120</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 30</span></td>
+                </tr>
+                <tr data-category="womens" data-name="anarkali dress gown maxi dress womens">
+                  <td class="garment-sno">12</td>
+                  <td class="garment-name">Anarkali</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 350</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 125</span></td>
+                </tr>
+                <tr data-category="womens" data-name="wedding dress bridal gown bridal dress womens">
+                  <td class="garment-sno">13</td>
+                  <td class="garment-name">Wedding Dress</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 1,000</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 1,500</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 300</span></td>
+                </tr>
+                <tr data-category="womens" data-name="petticoat inner skirt inners womens">
+                  <td class="garment-sno">14</td>
+                  <td class="garment-name">Petticoat</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 60</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="womens" data-name="bra brassiere innerwear lingerie womens">
+                  <td class="garment-sno">15</td>
+                  <td class="garment-name">Bra</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 40</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="womens" data-name="panty panties innerwear undergarments womens">
+                  <td class="garment-sno">16</td>
+                  <td class="garment-name">Panty</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 30</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="womens" data-name="dupatta chunni stole scarf womens">
+                  <td class="garment-sno">17</td>
+                  <td class="garment-name">Dupatta</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 60</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="womens" data-name="shawl pashmina winter woolen womens">
+                  <td class="garment-sno">18</td>
+                  <td class="garment-name">Shawl</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 125</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 175</span></td>
+                  <td class="garment-price garment-iron"><span class="price-tag">₹ 40</span></td>
+                </tr>
+                <tr data-category="womens" data-name="saree blouse blouse choli womens">
+                  <td class="garment-sno">19</td>
+                  <td class="garment-name">Saree Blouse</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 60</span></td>
+                  <td class="garment-price garment-wet"><span class="price-tag">₹ 90</span></td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+
+                <!-- ================= 3. KIDS' WEAR ================= -->
+                <tr class="category-header-row" data-category="kids">
+                  <td colspan="5">
+                    <span class="cat-header-title">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display:inline; vertical-align:middle; margin-right:4px;">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M8 15s1.5 2 4 2 4-2 4-2"></path>
+                        <circle cx="9" cy="9" r="1.5" fill="currentColor"></circle>
+                        <circle cx="15" cy="9" r="1.5" fill="currentColor"></circle>
+                      </svg> 3. KIDS' WEAR (UNDER 12 YEARS)
+                    </span>
+                  </td>
+                </tr>
+                <tr data-category="kids" data-name="kids garment per piece children baby dress shirt frock kids">
+                  <td class="garment-sno">1</td>
+                  <td class="garment-name">Kids' Garment <span class="garment-subtext">(per piece)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 60</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="kids" data-name="school uniform top shirt uniform kids">
+                  <td class="garment-sno">2</td>
+                  <td class="garment-name">School Uniform &ndash; Top</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 80</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="kids" data-name="school uniform bottom pant shorts skirt uniform kids">
+                  <td class="garment-sno">3</td>
+                  <td class="garment-name">School Uniform &ndash; Bottom</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 80</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+
+                <!-- ================= 4. HOUSEHOLD ITEMS ================= -->
+                <tr class="category-header-row" data-category="household">
+                  <td colspan="5">
+                    <span class="cat-header-title">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display:inline; vertical-align:middle; margin-right:4px;">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                      </svg> 4. HOUSEHOLD ITEMS
+                    </span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="single bedsheet bed sheet household linen">
+                  <td class="garment-sno">1</td>
+                  <td class="garment-name">Single Bedsheet</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 150</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="double bedsheet bed sheet king queen household linen">
+                  <td class="garment-sno">2</td>
+                  <td class="garment-name">Double Bedsheet</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 200</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="pillow cover covers pillowcase household linen">
+                  <td class="garment-sno">3</td>
+                  <td class="garment-name">Pillow Cover</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 55</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="pillow pillows cushion household">
+                  <td class="garment-sno">4</td>
+                  <td class="garment-name">Pillow</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 100</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="screens screen window door household">
+                  <td class="garment-sno">5</td>
+                  <td class="garment-name">Screens</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 125</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="heavy curtains per sq ft curtain window drapery household">
+                  <td class="garment-sno">6</td>
+                  <td class="garment-name">Heavy Curtains <span class="garment-subtext">(per sq. ft.)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 15</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="sheer curtains per sq ft curtain window sheer household">
+                  <td class="garment-sno">7</td>
+                  <td class="garment-name">Sheer Curtains <span class="garment-subtext">(per sq. ft.)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 12</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="single blanket blankets comforter household">
+                  <td class="garment-sno">8</td>
+                  <td class="garment-name">Single Blanket</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="double blanket blankets comforter household">
+                  <td class="garment-sno">9</td>
+                  <td class="garment-name">Double Blanket</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 300</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="sofa cover sofa covers upholstery household">
+                  <td class="garment-sno">10</td>
+                  <td class="garment-name">Sofa Cover</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 150</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="single quilt quilts razai household">
+                  <td class="garment-sno">11</td>
+                  <td class="garment-name">Single Quilt</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 300</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="double quilt quilts razai household">
+                  <td class="garment-sno">12</td>
+                  <td class="garment-name">Double Quilt</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 400</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="bed cover bedcover bedspread household">
+                  <td class="garment-sno">13</td>
+                  <td class="garment-name">Bed Cover</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 250</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="bath towel towels household">
+                  <td class="garment-sno">14</td>
+                  <td class="garment-name">Bath Towel</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 60</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="hand towel towels household">
+                  <td class="garment-sno">15</td>
+                  <td class="garment-name">Hand Towel</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 40</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="bath mat mats doormat household">
+                  <td class="garment-sno">16</td>
+                  <td class="garment-name">Bath Mat</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 50</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="tablecloth table cloth dining household linen">
+                  <td class="garment-sno">17</td>
+                  <td class="garment-name">Tablecloth</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 125</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="table frills table frill dining household">
+                  <td class="garment-sno">18</td>
+                  <td class="garment-name">Table Frills</td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 200</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
+                <tr data-category="household" data-name="carpet per sq ft rug floor carpet household">
+                  <td class="garment-sno">19</td>
+                  <td class="garment-name">Carpet <span class="garment-subtext">(per sq. ft.)</span></td>
+                  <td class="garment-price garment-wash"><span class="price-tag">₹ 35</span></td>
+                  <td class="garment-price garment-wet"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                  <td class="garment-price garment-iron"><span class="price-dash" aria-label="Not listed">&mdash;</span>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div><!-- /.garment-table-wrapper -->
-        </div><!-- /.garment-content-panel -->
-      </div><!-- /.garment-widget-body -->
-    </div><!-- /.garment-pricing-card -->
-  </div><!-- /.container -->
-</section>
+        </div><!-- /.garment-pricing-card -->
+      </div><!-- /.container -->
+    </section>
 
     <!-- CALL TO ACTION SECTION -->
-    <section style="padding: 70px 0; background: linear-gradient(135deg, #0c2540 0%, #153e6b 100%); color: #ffffff; text-align: center;">
+    <section
+      style="padding: 70px 0; background: linear-gradient(135deg, #0c2540 0%, #153e6b 100%); color: #ffffff; text-align: center;">
       <div class="container" data-aos="fade-up">
-        <h2 style="font-family: 'Oswald', sans-serif; font-size: clamp(26px, 3.5vw, 36px); margin-bottom: 15px; color: #ffffff;">
+        <h2
+          style="font-family: 'Oswald', sans-serif; font-size: clamp(26px, 3.5vw, 36px); margin-bottom: 15px; color: #ffffff;">
           Ready for Crisp, Fresh &amp; Hygienic Clothes?
         </h2>
         <p style="max-width: 600px; margin: 0 auto 30px; font-size: 16px; color: #cbd5e1;">
           Schedule your doorstep pickup today or visit our store outlet in Neelankarai, Chennai.
         </p>
         <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-          <a href="our-stores.html#contact" class="btn btn-primary" style="padding: 14px 32px; font-size: 16px; border-radius: 30px;">
+          <a href="our-stores.html#contact" class="btn btn-primary"
+            style="padding: 14px 32px; font-size: 16px; border-radius: 30px;">
             Book Pickup Now
           </a>
-          <a href="our-stores.html" class="btn btn-outline" style="padding: 14px 32px; font-size: 16px; border-radius: 30px; border-color: #ffffff; color: #ffffff;">
+          <a href="our-stores.html" class="btn btn-outline"
+            style="padding: 14px 32px; font-size: 16px; border-radius: 30px; border-color: #ffffff; color: #ffffff;">
             Find Nearest Store
           </a>
         </div>
@@ -926,7 +832,8 @@
           <div class="footer-logo">
             <img src="images/salavai trans.png" alt="The Salavai Laundry Logo" class="footer-logo-img" />
           </div>
-          <p class="footer-tagline">Laundry for Every Home. Built on dignity, modern technology and community empowerment across Tamil Nadu.</p>
+          <p class="footer-tagline">Laundry for Every Home. Built on dignity, modern technology and community
+            empowerment across Tamil Nadu.</p>
           <div class="footer-social">
             <a href="https://www.linkedin.com/posts/the-salavai-laundry_laundrybusiness-entrepreneurship-thesalavailaundry-activity-7484917984507944960-bTLi?utm_source=share&utm_medium=member_android&rcm=ACoAAD2Jaw0B0jKsnyQsAJFEcDfkAmO2iVwPQBk"
               class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
@@ -991,7 +898,8 @@
                   stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
-                </svg></span> <span>2/658, East Coast Rd, Ranga Reddy Gardens, Neelankarai, Chennai, Tamil Nadu 600115</span></p>
+                </svg></span> <span>2/658, East Coast Rd, Ranga Reddy Gardens, Neelankarai, Chennai, Tamil Nadu
+                600115</span></p>
           </div>
         </div>
       </div>
@@ -1010,8 +918,7 @@
     </svg>
   </button>
 
-  <!-- EMAILJS SDK & SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
 </body>
 

@@ -679,8 +679,8 @@
         const serviceVal = btn.getAttribute('data-service') || btn.getAttribute('data-program') || 'Pickup & Delivery';
         const serviceSelect = document.getElementById('contactService');
         if (serviceSelect) {
-          const matchOption = Array.from(serviceSelect.options).find(opt => 
-            opt.value.toLowerCase() === serviceVal.toLowerCase() || 
+          const matchOption = Array.from(serviceSelect.options).find(opt =>
+            opt.value.toLowerCase() === serviceVal.toLowerCase() ||
             opt.text.toLowerCase().includes(serviceVal.toLowerCase()) ||
             serviceVal.toLowerCase().includes(opt.value.toLowerCase())
           );
@@ -811,127 +811,72 @@
 
 
   // =============================================
-  // 18. GARMENT PRICING TABLE FILTER & SEARCH
+  // 18. GARMENT PRICING TABLE CATEGORY FILTER
   // =============================================
   function initGarmentPricingTable() {
     const tabs = document.querySelectorAll('.garment-tab-btn');
-    const searchInput = document.getElementById('garmentSearchInput');
     const table = document.getElementById('garmentPricingTable');
 
     if (!table) return;
 
-    // Automatically format all prices to 2 decimal places (e.g. ₹ 75 -> ₹ 75.00)
-    const priceCells = table.querySelectorAll('.garment-final-price');
-    priceCells.forEach(cell => {
-      let html = cell.innerHTML;
-      html = html.replace(/₹\s*([\d,]+(\.\d+)?)/g, (match, p1) => {
-        const numStr = p1.replace(/,/g, '');
-        const num = parseFloat(numStr);
-        if (!isNaN(num)) {
-          return '₹ ' + num.toFixed(2);
-        }
-        return match;
-      });
-      cell.innerHTML = html;
-    });
-
     const tbody = table.querySelector('tbody');
     const rows = tbody.querySelectorAll('tr:not(.category-header-row):not(.no-match-row)');
     const headerRows = tbody.querySelectorAll('tr.category-header-row');
+    const activeCategoryEl = document.getElementById('garmentActiveCategoryText');
 
     const activeTab = document.querySelector('.garment-tab-btn.active');
     let currentFilter = activeTab ? (activeTab.getAttribute('data-filter') || 'mens') : 'mens';
-    let currentSearch = '';
+
+    const catLabels = {
+      'kg': "KG Laundry (1 item)",
+      'mens': "Men's Wear (16 items)",
+      'womens': "Women's Wear (19 items)",
+      'kids': "Kids' Wear (3 items)",
+      'household': "Household Items (19 items)"
+    };
+
+    function updateCategoryNotice() {
+      if (!activeCategoryEl) return;
+      activeCategoryEl.innerHTML = `<span class="cat-indicator-dot"></span> <strong>${catLabels[currentFilter] || 'Garments'}</strong>`;
+    }
 
     function filterTable() {
-      let visibleCount = 0;
-
       rows.forEach(row => {
         const rowCategory = row.getAttribute('data-category');
-        const rowName = (row.getAttribute('data-name') || '').toLowerCase();
         const matchesCategory = (currentFilter === 'all' || rowCategory === currentFilter);
-        const matchesSearch = (!currentSearch || rowName.includes(currentSearch));
-
-        if (matchesCategory && matchesSearch) {
-          row.style.display = '';
-          visibleCount++;
-        } else {
-          row.style.display = 'none';
-        }
+        row.style.display = matchesCategory ? '' : 'none';
       });
 
-      // Toggle category headers based on filter and search
+      // Toggle category headers based on filter
       headerRows.forEach(header => {
         const cat = header.getAttribute('data-category');
         if (currentFilter !== 'all' && currentFilter !== cat) {
           header.style.display = 'none';
-        } else if (currentSearch) {
-          // If searching, check if any row in this category is visible
-          const catRows = tbody.querySelectorAll(`tr[data-category="${cat}"]:not(.category-header-row)`);
-          const hasVisible = Array.from(catRows).some(r => r.style.display !== 'none');
-          header.style.display = hasVisible ? '' : 'none';
         } else {
           header.style.display = '';
         }
       });
 
-      // Handle "No matching items found"
-      let noMatchRow = tbody.querySelector('.no-match-row');
-      if (visibleCount === 0) {
-        if (!noMatchRow) {
-          noMatchRow = document.createElement('tr');
-          noMatchRow.className = 'no-match-row';
-          noMatchRow.innerHTML = `<td colspan="3" style="text-align:center; padding: 40px 20px; color: #64748b; font-size: 15px;">No garments found matching "<strong>${currentSearch}</strong>". Please try another search term.</td>`;
-          tbody.appendChild(noMatchRow);
-        } else {
-          noMatchRow.innerHTML = `<td colspan="3" style="text-align:center; padding: 40px 20px; color: #64748b; font-size: 15px;">No garments found matching "<strong>${currentSearch}</strong>". Please try another search term.</td>`;
-          noMatchRow.style.display = '';
-        }
-      } else if (noMatchRow) {
-        noMatchRow.style.display = 'none';
-      }
+      updateCategoryNotice();
     }
 
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
         tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
         currentFilter = tab.getAttribute('data-filter') || 'mens';
         filterTable();
+
+        const wrapper = table.closest('.garment-table-wrapper');
+        if (wrapper) wrapper.scrollTop = 0;
       });
     });
 
-    const searchBtn = document.getElementById('garmentSearchBtn');
-
-    function performSearch() {
-      if (!searchInput) return;
-      currentSearch = searchInput.value.trim().toLowerCase();
-      if (currentSearch) {
-        currentFilter = 'all';
-        tabs.forEach(t => t.classList.remove('active'));
-      }
-      filterTable();
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        currentSearch = e.target.value.trim().toLowerCase();
-        filterTable();
-      });
-      searchInput.addEventListener('keyup', (e) => {
-        if (e.key === 'Enter') {
-          performSearch();
-        }
-      });
-    }
-
-    if (searchBtn) {
-      searchBtn.addEventListener('click', () => {
-        performSearch();
-      });
-    }
-
-    // Run initial filter to display active tab (Men's 56 items)
+    // Run initial filter to display active tab (Men's 17 items)
     filterTable();
 
     // Minimize / Expand Table toggle logic
